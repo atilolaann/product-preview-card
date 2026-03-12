@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      font-family: "Montserrat", sans-serif;
+    }
+    .font-fraunces{
+      font-family: "Fraunces", serif;
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,
+wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</style>
+</head>
+
+<body style="background-color:hsl(30, 38%, 92%);">
+  <main class="min-h-screen flex items-center justify-center">
+    <section class="flex flex-col md:flex-row bg-white max-w-2xl rounded-lg">
+    <img src="images\image-product-desktop.jpg" class="w-full md:w-80 rounded-lg object-cover hidden md:block" alt="desktop image of a perfume product">
+    <img src="images\image-product-mobile.jpg" class="w-full md:w-80 rounded-lg object-cover block md:hidden" alt="mobile image f a perfume product">
+    <article class="p-8">
+    <p class="tracking-widest text-gray-600">PERFUME</p>
+    <p class="font-fraunces text-5xl py-6 font-bold">Gabrielle Essence Eau De Parfum</p>
+    <p class="text-gray-600"> A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+  Perfumer-Creator for the House of CHANEL.</p>
+    <Section class="flex gap-4 items-center py-6">
+    <p class="text-5xl font-bold font-fraunces text-green-700">$149.99</p>
+    <p class="text-gray-600 line-through">$169.99</p>
+    </Section>
+    <a href="#" class=" text-sm flex items-center justify-center gap-3 bg-green-700 py-4 px-26 rounded-lg text-white font-semibold">
+       <img src="images\icon-cart.svg" alt="cart icon">Add to Cart</a>
+    </article>
+    </section>
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Atilola</a>.
+  </div>
+</body>
+</html>
